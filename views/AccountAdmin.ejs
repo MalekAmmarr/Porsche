@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/Account.css">
+    <title>Porsche : Admin Account</title>
+  
+  <!-- For favicon png -->
+  <link rel="shortcut icon" type="image/icon" href="./logo/Logo.png"/>
+</head>
+<body class="dark-mode">
+    <div class="profile-container">
+        <div class="profile-header">
+            <img src="<%= path1 %>" alt="Profile Picture">
+            <h1><%=AdminInfo.admin_name%></h1>
+            <p><%=AdminInfo.admin_name%>_ID : <%=AdminInfo.admin_id%></p>
+            
+        </div>
+        <div class="profile-details">
+            <div class="detail">
+                <span>Email:</span>
+                <p> <%=AdminInfo.email%></p>
+            </div>
+            <div class="detail">
+                <span>Full Name:</span>
+                <p><%=AdminInfo.fullName%></p>
+            </div>
+            <button class="home-button" onclick="window.location.href = 'AdminHome';">
+                <span class="transition"></span>
+                <span class="gradient"></span>
+                <span class="label">Return to Home</span>
+            </button>
+            
+            
+        </div>
+    </div>
+</body>
+</html>

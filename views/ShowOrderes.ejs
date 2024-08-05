@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/ShowOrderes.css">
+    <title>Porsche :  Orderes</title>
+  
+  <!-- For favicon png -->
+  <link rel="shortcut icon" type="image/icon" href="./logo/Logo.png"/>
+</head>
+<body class="dark-mode">
+    <div class="profile-container">
+        <div class="profile-header">
+            <img src="<%= path1 %>" alt="Profile Picture">
+            <h1><%=AdminInfo.admin_name%></h1>
+            <p><%=AdminInfo.admin_name%>_ID : <%=AdminInfo.admin_id%></p>
+            
+        </div>
+        <div class="profile-details">
+            <div class="detail">
+                <span>all Orders:</span>
+                <% if (AdminOrders && AdminOrders.length > 0) { %>
+                    <ul>
+                        <% AdminOrders.forEach((order, index) => { %>
+                            <li>
+                                <p>Order <%= index + 1 %>:</p>
+                                <p>Customer_email: <%= order.email %></p>
+                                <p>Payment Method: <%= order.Payment_Method %></p>
+                                <p>Product: <%= order.car_model %></p>
+                                <p>Color: <%= order.color %></p>
+                                <p>Order ID: <%= order.order_id %></p>
+                            </li>
+                        <% }); %>
+                    </ul>
+                <% } else { %>
+                    <p>There is no Orders in the System.</p>
+                <% } %>
+            </div>
+            
+            <button class="home-button" onclick="window.location.href = 'AdminHome';">
+                <span class="transition"></span>
+                <span class="gradient"></span>
+                <span class="label">Return to Home</span>
+            </button>
+            
+            
+        </div>
+    </div>
+</body>
+</html>

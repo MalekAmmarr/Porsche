@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/Account.css">
+    <title>Porsche : User Account</title>
+  
+  <!-- For favicon png -->
+  <link rel="shortcut icon" type="image/icon" href="./logo/Logo.png"/>
+</head>
+<body class="dark-mode">
+    <div class="profile-container">
+        <div class="profile-header">
+            <img src="<%= path %>" alt="Profile Picture">
+            <h1><%=UserInfo.username%></h1>
+            <p><%=UserInfo.username%>_ID : <%=UserInfo.user_id%></p>
+            
+        </div>
+        <div class="profile-details">
+            <div class="detail">
+                <span>Email:</span>
+                <p> <%=UserInfo.email%></p>
+            </div>
+            <div class="detail">
+                <span>Address:</span>
+                <p><%=UserInfo.address%></p>
+            </div>
+            <div class="detail">
+                <span>Date of Birth:</span>
+                <p><%=UserInfo.DateOfBirth%></p>
+            </div>
+            <div class="detail">
+                <span>Full Name:</span>
+                <p><%=UserInfo.fullName%></p>
+            </div>
+            <div class="detail">
+                <span>User Orders:</span>
+                <% if (UserOrders && UserOrders.length > 0) { %>
+                    <ul>
+                        <% UserOrders.forEach((order, index) => { %>
+                            <li>
+                                <p>Order <%= index + 1 %>:</p>
+                                <p>Payment Method: <%= order.Payment_Method %></p>
+                                <p>Product: <%= order.car_model %></p>
+                                <p>Color: <%= order.color %></p>
+                                <p>Price: <%= order.price %></p>
+                                <p>Order ID: <%= order.order_id %></p>
+                            </li>
+                        <% }); %>
+                    </ul>
+                <% } else { %>
+                    <p>You have no orders.</p>
+                <% } %>
+            </div>
+            
+            <button class="home-button" onclick="window.location.href = 'UserHome';">
+                <span class="transition"></span>
+                <span class="gradient"></span>
+                <span class="label">Return to Home</span>
+            </button>
+            
+            
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title of site -->
+	<title>Porsche : Confirm Your Order</title>
+
+	<!-- For favicon png -->
+	<link rel="shortcut icon" type="image/icon" href="./logo/Logo.png">
+    <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <style>
+        body {
+            background-image: url('./Orders.jpg');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .form-container {
+            width: 350px;
+            height: 700px;
+            overflow-y: auto;
+            background-color: rgba(19, 18, 18, 0.8);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            font-size: 14px;
+            margin-right: 20px;
+        }
+
+        .form-label {
+            color: #f9f6f9;
+        }
+
+        h1.text-center {
+            color: #f9f9f9;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1 class="text-center">Drive your Dream</h1>
+            <form action="/Order" method="POST">
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
+                </div>
+                <div class="mb-3">
+                    <label for="user_id" class="form-label">user ID</label>
+                    <input type="number" class="form-control" id="user_id" name="user_id" placeholder="Enter User ID">
+                </div>
+                <div class="mb-3">
+                    <label for="car_model" class="form-label">Car Name</label>
+                    <input type="text" class="form-control" id="car_model" name="car_model"
+                        placeholder="Enter Car Name">
+                </div>
+                <div class="mb-3">
+                    <label for="color" class="form-label">Car Color</label>
+                    <input type="text" class="form-control" id="color" name="color"
+                        placeholder="Enter Car Color">
+                </div>
+                <div class="mb-3">
+                    <label for="order_id" class="form-label">choose any order_id</label>
+                    <input type="number" class="form-control" id="order_id" name="order_id"
+                        placeholder="Enter any order_id">
+                </div>
+                <div class="mb-3">
+                    <label for="Payment_Method" class="form-label">Payment Method</label>
+                    <select class="form-select" id="Payment_Method" name="Payment_Method">
+                        <option value="credit_card">Credit Card</option>
+                        <option value="paypal">PayPal</option>
+                        <option value="bank_transfer">Bank Transfer</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Buy Now</button>
+            </form>
+        </div>
+        
+    </div>
+</body>
+
+</html>

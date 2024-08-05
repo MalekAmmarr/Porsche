@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- title of site -->
+	<title>Porsche: Signup</title>
+
+	<!-- For favicon png -->
+	<link rel="shortcut icon" type="image/icon" href="./logo/Logo.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <style>
+    body {
+      background-image: url('./SignUp.jpg');
+      /* Replace with the path to your image */
+      background-size: cover;
+      background-position: center;
+      /*padding-top: 50px;*/
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      /* Aligns the container to the left */
+    }
+
+    .form-container {
+      width: 350px;
+      /* Keep the same width */
+      max-height: 800px;
+      /* Maximum height for the container */
+      overflow-y: auto;
+      /* Add vertical scroll if content exceeds max-height */
+      background-color: rgba(19, 19, 19, 0.7);
+      /* semi-Transparent Backgroung */
+      padding: 5px 10px;
+      /* Reduced vertical and horizontal padding */
+      border-radius: 8px;
+      /* Rounded corners */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      /* Soft box shadow */
+      margin-left: 20px;
+      /* Space from the left edge */
+      font-size: 14px;
+      /* Reduced font size for a more compact look */
+
+    }
+
+    .form-label {
+      color: #f9f6f9;
+      /* Orange color for all labels */
+    }
+
+    h1.text-center {
+      color: #f9f9f9;
+      /* Orange color for the h1 text */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="form-container">
+    <h1 class="text-center">Create an Admin</h1>
+    <form action="/CreateAdmin" method="POST">
+      <div class="mb-3">
+        <label for="admin_name" class="form-label">Admin name</label>
+        <input type="text" class="form-control" id="admin_name" name="admin_name" placeholder="Enter admin_name">
+      </div>
+      <div class="mb-3">
+        <label for="admin_id" class="form-label">Admin ID</label>
+        <input type="text" class="form-control" id="admin_id" name="admin_id" placeholder="Enter admin ID">
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+        <small id="passwordHelp" class="form-text text-muted">We'll never share your password with anyone else.</small>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
+      </div>
+      <div class="mb-3">
+        <label for="fullName" class="form-label">Full Name</label>
+        <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Enter full name">
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Create an Admin</button>
+    </form>
+  </div>
+</body>
+
+</html>

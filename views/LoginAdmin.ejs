@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--font-family-->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rufina:400,700" rel="stylesheet">
+  <title>Porsche : Admin Create</title>
+
+  <!-- For favicon png -->
+  <link rel="shortcut icon" type="image/icon" href="./User/logo/Logo.png" />
+  <style>
+    body {
+      background-image: url('./logo/Carali.jpg');
+      /* Specify your background image path */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .left-paragraph {
+      position: absolute;
+      left: 10%;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #fff;
+      font-size: 20px;
+      z-index: 1;
+    }
+
+    .login-box {
+      position: relative;
+      bottom: -5%;
+      right: 30%;
+      width: 400px;
+      padding: 40px;
+      background: rgba(24, 20, 20, 0.987);
+      box-sizing: border-box;
+      box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+      border-radius: 10px;
+      z-index: 1;
+    }
+
+    .login-box .background-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('./logo/Loginform.jpg');
+      background-size: cover;
+      background-position: center;
+      opacity: 0.5;
+      /* Adjust the opacity value as needed */
+      z-index: -1;
+      border-radius: 10px;
+    }
+
+    .login-box .user-box {
+      position: relative;
+    }
+
+    .login-box .user-box input {
+      width: 100%;
+      padding: 10px 0;
+      font-size: 16px;
+      color: #fff;
+      margin-bottom: 30px;
+      border: none;
+      border-bottom: 1px solid #fff;
+      outline: none;
+      background: transparent;
+    }
+
+    .login-box .user-box label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 10px 0;
+      font-size: 16px;
+      color: #fff;
+      pointer-events: none;
+      transition: .5s;
+    }
+
+    .login-box .user-box input:focus~label,
+    .login-box .user-box input:valid~label {
+      top: -20px;
+      left: 0;
+      color: #bdb8b8;
+      font-size: 12px;
+    }
+
+    .login-box form .send-button,
+    .login-box form .send-button {
+      position: relative;
+      display: inline-block;
+      padding: 10px 20px;
+      color: #ffffff;
+      font-size: 16px;
+      text-decoration: none;
+      text-transform: uppercase;
+      overflow: hidden;
+      transition: .5s;
+      margin-top: 20px;
+      letter-spacing: 4px;
+      border: none;
+      background: none;
+      cursor: pointer;
+    }
+
+    .login-box form .send-button:hover {
+      background: #03a4f4;
+      color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 5px #03a4f4,
+        0 0 25px #03a4f4,
+        0 0 50px #03a4f4,
+        0 0 100px #03a4f4;
+    }
+
+    .login-box form .send-button span {
+      position: absolute;
+      display: block;
+    }
+
+    @keyframes btn-anim1 {
+      0% {
+        left: -100%;
+      }
+
+      50%,
+      100% {
+        left: 100%;
+      }
+    }
+
+    .login-box form .send-button span:nth-child(1) {
+      bottom: 2px;
+      left: -100%;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #03a4f4);
+      animation: btn-anim1 2s linear infinite;
+    }
+
+    .signup-link {
+      color: #ffffff;
+      text-align: center;
+      margin-top: 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .signup-link .link {
+      color: #03a4f4;
+      display: block;
+      margin-top: 5px;
+    }
+
+    .signup-link .link:hover {
+      text-decoration: underline;
+    }
+
+    .remember-me {
+      color: #f3efef;
+      font-size: 14px;
+    }
+
+    .remember-me input {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="login-box">
+    <div class="background-image"></div>
+
+    <form action="/LoginAdmin" method="POST">
+      <div class="user-box">
+        <input type="email" name="email" required="">
+        <label>email</label>
+      </div>
+      <div class="user-box">
+        <input type="password" name="password" required="">
+        <label>password</label>
+      </div>
+      <div class="remember-me">
+        <input type="checkbox">
+        <label>Remember me</label>
+      </div>
+      <center>
+        <button type="submit" class="send-button">
+          SEND
+          <span></span>
+        </button>
+      </center>
+      <p class="signup-link">
+        You Must be An Admin in the system not  User.
+        
+      </p>
+    </form>
+  </div>
+</body>
+
+</html>

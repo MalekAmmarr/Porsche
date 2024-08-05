@@ -1,0 +1,704 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<!-- meta data -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<!--font-family-->
+	<link
+		href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+		rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Rufina:400,700" rel="stylesheet">
+
+	<!-- title of site -->
+	<title>Porsche: User Home</title>
+
+	<!-- For favicon png -->
+	<link rel="shortcut icon" type="image/icon" href="./logo/Logo.png" />
+
+	<!--font-awesome.min.css-->
+	<link rel="stylesheet" href="./css/font-awesome.min.css">
+
+	<!--linear icon css-->
+	<link rel="stylesheet" href="./css/linearicons.css">
+
+	<!--flaticon.css-->
+	<link rel="stylesheet" href="./css/flaticon.css">
+
+	<!--animate.css-->
+	<link rel="stylesheet" href="./css/animate.css">
+
+	<!--owl.carousel.css-->
+	<link rel="stylesheet" href="./css/owl.carousel.min.css">
+	<link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
+	<!--bootstrap.min.css-->
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+
+	<!-- bootsnav -->
+	<link rel="stylesheet" href="./css/bootsnav.css">
+
+	<!--style.css-->
+	<link rel="stylesheet" href="./css/style.css">
+
+	<!--responsive.css-->
+	<link rel="stylesheet" href="./css/responsive.css">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+	<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+</head>
+
+<body>
+	<!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+	<!--welcome-hero start -->
+	<section id="home" class="welcome-hero">
+
+		<!-- top-area Start -->
+		<div class="top-area">
+			<div class="header-area">
+				<!-- Start Navigation -->
+				<nav class="navbar navbar-default bootsnav  navbar-sticky navbar-scrollspy"
+					data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">
+
+					<div class="container">
+
+						<!-- Start Header Navigation -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse"
+								data-target="#navbar-menu">
+								<i class="fa fa-bars"></i>
+							</button>
+							<a class="navbar-brand" href="index">Porsche<span></span></a>
+
+						</div><!--/.navbar-header-->
+						<!-- End Header Navigation -->
+
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+							<ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+								<li class=" scroll active"><a href="#home">home</a></li>
+								<li class="scroll"><a href="#new-cars">new cars</a></li>
+								<li class="scroll"><a href="#featured-cars">featured cars</a></li>
+								<li class="scroll"><a href="#brand">Our Brand</a></li>
+								<li class="scroll"><a href="#contact">contact</a></li>
+                                <li><a href="./Account"> Your Account</a></li>
+                                <li><a href="/">Logout</a></li>
+							</ul><!--/.nav -->
+						</div><!-- /.navbar-collapse -->
+					</div><!--/.container-->
+				</nav><!--/nav-->
+				<!-- End Navigation -->
+			</div><!--/.header-area-->
+			<div class="clearfix"></div>
+
+		</div><!-- /.top-area-->
+		<!-- top-area End -->
+
+		<div class="container">
+			<div class="welcome-hero-txt">
+				<h2>Indulge in the Height of Luxury: Porsche</h2>
+				<p>
+					Prepare to embark on a journey tailored exclusively for you at Porsche. Here, luxury isn't just a
+					standard;
+					it's a commitment to indulging your every desire. Every detail of our cars is meticulously
+					crafted to elevate your experience, ensuring that each moment behind the wheel is nothing short of
+					extraordinary
+				</p>
+				<button class="welcome-btn" onclick="window.location.href='#contact'">contact us</button>
+			</div>
+		</div>
+
+	</section><!--/.welcome-hero-->
+	<!--welcome-hero end -->
+
+	<!--service start -->
+	<!--service start -->
+	<section id="service" class="service">
+		<div class="container">
+			<div class="service-content">
+				<div class="row">
+					<div class="col-md-4 col-sm-6">
+						<div class="single-service-item">
+							<div class="single-service-icon">
+								<i class="flaticon-signup"></i>
+							</div>
+							<h2><a href="Account"><%=UserInfo.username%></a></h2>
+							<p>
+								Hello <%=UserInfo.fullName%> ,wish you enjoy our Products and get what you desire.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/.container-->
+	</section><!--/.service-->
+
+	<!--service end-->
+
+	<!--new-cars start -->
+	<section id="new-cars" class="new-cars">
+		<div class="container">
+			<div class="section-header">
+				<p>checkout <span>the</span> latest cars</p>
+				<h2>newest cars</h2>
+			</div><!--/.section-header-->
+			<div class="new-cars-content">
+				<div class="owl-carousel owl-theme" id="new-cars-carousel">
+					<div class="new-cars-item">
+						<div class="single-new-cars-item">
+							<div class="row">
+								<div class="col-md-7 col-sm-12">
+									<div class="new-cars-img">
+										<img src="./porsche_911_gt3_cozy-5120x2880.jpg" alt="img" />
+									</div><!--/.new-cars-img-->
+								</div>
+								<div class="col-md-5 col-sm-12">
+									<div class="new-cars-txt">
+										<h2><a href="#">porsche 911 gt3</a></h2>
+										<p>
+											The Porsche 911 GT3 stands as a benchmark for high-performance sports cars,
+											embodying precision engineering and track-ready capabilities. Its heritage
+											traces back to Porsche's motorsport expertise, delivering exhilarating
+											performance powered by a high-revving naturally aspirated engine. With a
+											focus on agility, aerodynamics, and driver engagement, the GT3 offers a
+											thrilling driving experience both on the road and the track, making it a
+											sought-after choice for driving enthusiasts seeking uncompromised
+											performance and dynamics in a sports car.
+										</p>
+
+										<button class="welcome-btn new-cars-btn" onclick="window.location.href='car-details'">
+											view details
+										</button>
+									</div><!--/.new-cars-txt-->
+								</div><!--/.col-->
+							</div><!--/.row-->
+						</div><!--/.single-new-cars-item-->
+					</div><!--/.new-cars-item-->
+					<div class="new-cars-item">
+						<div class="single-new-cars-item">
+							<div class="row">
+								<div class="col-md-7 col-sm-12">
+									<div class="new-cars-img">
+										<img src="./porsche_macan_turbo_2024_8k-7680x4320.jpg" alt="img" />
+									</div><!--/.new-cars-img-->
+								</div>
+								<div class="col-md-5 col-sm-12">
+									<div class="new-cars-txt">
+										<h2><a href="#">Porsche macan 2024</a></h2>
+										<p>
+											The Porsche Macan Turbo represents the pinnacle of performance and luxury in
+											the compact SUV segment. With a powerful turbocharged engine and advanced
+											handling technologies derived from Porsche's sports cars, the Macan Turbo
+											offers a thrilling driving experience combined with everyday practicality.
+											Its dynamic design, premium interior features, and cutting-edge technology
+											make it a top choice for drivers seeking versatility without compromising on
+											sportiness and refinement
+										</p>
+										<button class="welcome-btn new-cars-btn" onclick="window.location.href='HossCar'">
+											view details
+										</button>
+									</div><!--/.new-cars-txt-->
+								</div><!--/.col-->
+							</div><!--/.row-->
+						</div><!--/.single-new-cars-item-->
+					</div><!--/.new-cars-item-->
+					<div class="new-cars-item">
+						<div class="single-new-cars-item">
+							<div class="row">
+								<div class="col-md-7 col-sm-12">
+									<div class="new-cars-img">
+										<img src="./porsche_taycan_turbo_gt_weissach_package_2024_8k-7680x4320.jpg"
+											alt="img" />
+									</div><!--/.new-cars-img-->
+								</div>
+								<div class="col-md-5 col-sm-12">
+									<div class="new-cars-txt">
+										<h2><a href="#">Porsche taycan 2024</a></h2>
+										<p>
+											The Porsche Taycan epitomizes the future of electric performance vehicles,
+											blending Porsche's iconic sports car heritage with cutting-edge electric
+											technology. As Porsche's first all-electric sports car, the Taycan delivers
+											instant acceleration, precise handling, and long-range capabilities,
+											showcasing the brand's commitment to innovation and sustainability. With its
+											striking design, advanced electric drivetrain, and luxurious interior, the
+											Taycan sets new standards for high-performance electric cars, offering a
+											thrilling driving experience while remaining environmentally conscious
+										</p>
+										<button class="welcome-btn new-cars-btn" onclick="window.location.href='AliCar'">
+											view details
+										</button>
+									</div><!--/.new-cars-txt-->
+								</div><!--/.col-->
+							</div><!--/.row-->
+						</div><!--/.single-new-cars-item-->
+					</div><!--/.new-cars-item-->
+				</div><!--/#new-cars-carousel-->
+			</div><!--/.new-cars-content-->
+		</div><!--/.container-->
+
+	</section><!--/.new-cars-->
+	<!--new-cars end -->
+
+	<!--featured-cars start -->
+	<section id="featured-cars" class="featured-cars">
+		<div class="container">
+			<div class="section-header">
+				<p>checkout <span>the</span> featured cars</p>
+				<h2>featured cars</h2>
+			</div><!--/.section-header-->
+			<div class="featured-cars-content">
+				<div class="row">
+					<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="single-featured-cars">
+							<div class="featured-img-box">
+								<div class="featured-cars-img">
+									<img src="./porsche_911_gt3_cozy-5120x2880.jpg" alt="cars">
+								</div>
+								<div class="featured-model-info">
+									<p>
+										model: 2023
+										<span class="featured-mi-span"> New </span>
+										<span class="featured-hp-span"> 500HP</span>
+										automatic
+									</p>
+								</div>
+							</div>
+							<div class="featured-cars-txt">
+								<h2><a href="car-details">Porsche 911 Gt3 turbo</a></h2>
+								<h3>$160,000</h3>
+								<p>
+									In Stock
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="single-featured-cars">
+							<div class="featured-img-box">
+								<div class="featured-cars-img">
+									<img src="./porsche_macan_turbo_2024_8k-7680x4320.jpg" alt="cars">
+								</div>
+								<div class="featured-model-info">
+									<p>
+										model: 2017
+										<span class="featured-mi-span"> New </span>
+										<span class="featured-hp-span"> 630HP</span>
+										automatic
+									</p>
+								</div>
+							</div>
+							<div class="featured-cars-txt">
+								<h2><a href="HossCar">Porsche macan turbo 2024</a></h2>
+								<h3>$90,000</h3>
+								<p>
+									In Stock
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="single-featured-cars">
+							<div class="featured-img-box">
+								<div class="featured-cars-img">
+									<img src="./porsche_taycan_turbo_gt_weissach_package_2024_8k-7680x4320.jpg"
+										alt="cars">
+								</div>
+								<div class="featured-model-info">
+									<p>
+										model: 2017
+										<span class="featured-mi-span"> New</span>
+										<span class="featured-hp-span"> 670HP</span>
+										automatic
+									</p>
+								</div>
+							</div>
+							<div class="featured-cars-txt">
+								<h2><a href="AliCar">porsche taycan turbo 2024</a></h2>
+								<h3>$160,000</h3>
+								<p>
+									In Stock
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="single-featured-cars">
+							<div class="featured-img-box">
+								<div class="featured-cars-img">
+									<img src="./porsche_panamera_turbo_e_hybrid_sonderwunsch_2024_8k-7680x4320.jpg" alt="cars">
+								</div>
+								<div class="featured-model-info">
+									<p>
+										model: 2024
+										<span class="featured-mi-span"> New</span>
+										<span class="featured-hp-span"> 670HP</span>
+										automatic
+									</p>
+								</div>
+							</div>
+							<div class="featured-cars-txt">
+								<h2><a href="MalekCar">Porsche panamera 2024</a></h2>
+								<h3>$95,500</h3>
+								<p>
+									In Stock
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="single-featured-cars">
+							<div class="featured-img-box">
+								<div class="featured-cars-img">
+									<img src="./porsche_cayenne_e_hybrid_2023_4k-3840x2160.jpg" alt="cars">
+								</div>
+								<div class="featured-model-info">
+									<p>
+										model: 2023
+										<span class="featured-mi-span"> New</span>
+										<span class="featured-hp-span"> 335HP</span>
+										automatic
+									</p>
+								</div>
+							</div>
+							<div class="featured-cars-txt">
+								<h2><a >Porsche cayenne 2023</a></h2>
+								<h3>$100,850</h3>
+								<p>
+									Out of Stock
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="single-featured-cars">
+							<div class="featured-img-box">
+								<div class="featured-cars-img">
+									<img src="./Carrera.webp" alt="cars">
+								</div>
+								<div class="featured-model-info">
+									<p>
+										model: 2005
+										<span class="featured-mi-span"> New</span>
+										<span class="featured-hp-span"> 350HP</span>
+										automatic
+									</p>
+								</div>
+							</div>
+							<div class="featured-cars-txt">
+								<h2><a >porsche carrera 2005</a></h2>
+								<h3>$1,320,000</h3>
+								<p>
+									1 of 1<br>Sold
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="single-featured-cars">
+							<div class="featured-img-box">
+								<div class="featured-cars-img">
+									<img src="./red_porsche_718_boxster_car_dark_background_4k_hd_cars-3840x2160.jpg" alt="cars">
+								</div>
+								<div class="featured-model-info">
+									<p>
+										model: 2020
+										<span class="featured-mi-span"> New</span>
+										<span class="featured-hp-span"> 300HP</span>
+										automatic
+									</p>
+								</div>
+							</div>
+							<div class="featured-cars-txt">
+								<h2><a >Porsche 718 boxster 2020</a></h2>
+								<h3>$56,000</h3>
+								<p>
+									Out of Stock
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="single-featured-cars">
+							<div class="featured-img-box">
+								<div class="featured-cars-img">
+									<img src="./porsche-718-cayman-uhd-4k-wallpaper.jpg" alt="cars">
+								</div>
+								<div class="featured-model-info">
+									<p>
+										model: 2017
+										<span class="featured-mi-span"> New</span>
+										<span class="featured-hp-span"> 300HP</span>
+										automatic
+									</p>
+								</div>
+							</div>
+							<div class="featured-cars-txt">
+								<h2><a >Porsche 718 Cayman 2017</a></h2>
+								<h3>$75,800</h3>
+								<p>
+									Out of Stock
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/.container-->
+
+	</section><!--/.featured-cars-->
+	<!--featured-cars end -->
+
+	<!-- clients-say strat -->
+	<section id="clients-say" class="clients-say">
+		<div class="container">
+			<div class="section-header">
+				<h2>what our clients say</h2>
+			</div><!--/.section-header-->
+			<div class="row">
+				<div class="owl-carousel testimonial-carousel">
+					<div class="col-sm-3 col-xs-12">
+						<div class="single-testimonial-box">
+							<div class="testimonial-description">
+								<div class="testimonial-info">
+									<div class="testimonial-img">
+										<img src="./images/clients/Malekk.jpg" alt="image of clients person" />
+									</div><!--/.testimonial-img-->
+								</div><!--/.testimonial-info-->
+								<div class="testimonial-comment">
+									<p>
+										Owning a Porsche has been a dream come true for me, and I can't express how elated I am with my purchase. From the sleek design to the exhilarating performance, every moment behind the wheel feels like a celebration. The attention to detail and craftsmanship are impeccable, making every drive a truly unforgettable experience. Thank you, Porsche, for creating such a masterpiece!
+									</p>
+								</div><!--/.testimonial-comment-->
+								<div class="testimonial-person">
+									<h2><a href="#">Malek Ammar</a></h2>
+									<h4>Sharm El Sheikh</h4>
+								</div><!--/.testimonial-person-->
+							</div><!--/.testimonial-description-->
+						</div><!--/.single-testimonial-box-->
+					</div><!--/.col-->
+					<div class="col-sm-3 col-xs-12">
+						<div class="single-testimonial-box">
+							<div class="testimonial-description">
+								<div class="testimonial-info">
+									<div class="testimonial-img">
+										<img src="./images/clients/Hoss.jpg" alt="image of clients person" />
+									</div><!--/.testimonial-img-->
+								</div><!--/.testimonial-info-->
+								<div class="testimonial-comment">
+									<p>
+										I recently became the proud owner of a Porsche, and I must say, it has exceeded all my expectations. The combination of power, precision, and luxury is unmatched. Whether cruising along scenic routes or navigating city streets, the Porsche delivers a level of driving pleasure that is simply unparalleled. It's more than just a car; it's a testament to engineering excellence and a symbol of pure automotive artistry.
+									</p>
+								</div><!--/.testimonial-comment-->
+								<div class="testimonial-person">
+									<h2><a href="#">Omar Hossam</a></h2>
+									<h4>Layan Compound</h4>
+								</div><!--/.testimonial-person-->
+							</div><!--/.testimonial-description-->
+						</div><!--/.single-testimonial-box-->
+					</div><!--/.col-->
+					<div class="col-sm-3 col-xs-12">
+						<div class="single-testimonial-box">
+							<div class="testimonial-description">
+								<div class="testimonial-info">
+									<div class="testimonial-img">
+										<img src="./images/clients/3elwa.jpg" alt="image of clients person" />
+									</div><!--/.testimonial-img-->
+								</div><!--/.testimonial-info-->
+								<div class="testimonial-comment">
+									<p>
+										My decision to purchase a Porsche has been life-changing in the best possible way. The sheer joy and excitement I feel every time I step into my car is indescribable. The performance capabilities are mind-blowing, and the sleek design never fails to turn heads wherever I go. Beyond the thrill of driving, the Porsche community has welcomed me with open arms, adding another layer of fulfillment to the ownership experience. Investing in a Porsche was undoubtedly one of the best decisions I've ever made.
+									</p>
+								</div><!--/.testimonial-comment-->
+								<div class="testimonial-person">
+									<h2><a href="#">3elwa</a></h2>
+									<h4>Assiut</h4>
+								</div><!--/.testimonial-person-->
+							</div><!--/.testimonial-description-->
+						</div><!--/.single-testimonial-box-->
+					</div><!--/.col-->
+				</div><!--/.testimonial-carousel-->
+			</div><!--/.row-->
+		</div><!--/.container-->
+
+	</section><!--/.clients-say-->
+	<!-- clients-say end -->
+
+	<!-- Replace the brand section with two images side by side -->
+<section id="brand" class="brand">
+    <div class="container">
+        <div class="brand-images">
+            <div class="brand-image">
+                <img src="./Porsche.jpg" alt="Porsche Image 1">
+            </div>
+            <div class="brand-image">
+                <img src="./stickercrestnew.webp" alt="Porsche Image 2">
+            </div>
+        </div>
+    </div><!--/.container-->
+</section><!--/brand-->
+
+
+
+	<!--blog start -->
+	<section id="blog" class="blog"></section><!--/.blog-->
+	<!--blog end -->
+
+	<!--contact start-->
+	<footer id="contact" class="contact">
+		<div class="container">
+			<div class="footer-top">
+				<div class="row">
+					<div class="col-md-3 col-sm-6">
+						<div class="single-footer-widget">
+							<div class="footer-logo">
+								<a href="index.html">Porsche</a>
+							</div>
+							<p>
+								Get Ur desired car in reasonable price
+							</p>
+							<div class="footer-contact">
+								<p>omar.hossam3@gmail.com</p>
+								<p>+20 1280008668</p>
+								<p>-----------------------------</p>
+								<p>ali.hasaballah@yahoo.com</p>
+								<p>+20 101 182 8999</p>
+								<p>-----------------------------</p>
+								<p>malekammar0@outlook.com</p>
+								<p>+20 122 969 2870</p>
+
+							</div>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-6">
+						<div class="single-footer-widget">
+							<h2>about devloon</h2>
+							<ul>
+								<li><a >about us</a></li>
+								<li><a >career</a></li>
+								<li><a>terms <span> of service</span></a></li>
+								<li><a>privacy policy</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3 col-xs-12">
+						<div class="single-footer-widget">
+							<h2>Branches</h2>
+							<div class="row">
+								<div class="col-md-7 col-xs-6">
+									<ul>
+										<li><a >Assiut</a></li>
+										<li><a >Sharm El Sheikh</a></li>
+										<li><a >layan Compound</a></li>
+										<li><a >Sodic East compound</a></li>
+										<li><a >Marley Compound</a></li>
+										<li><a ></a></li>
+									</ul>
+								</div>
+								<div class="col-md-5 col-xs-6">
+									<ul>
+										<li><a >UK</a></li>
+										<li><a >USA</a></li>
+										<li><a >Brazil</a></li>
+										<li><a >Germany</a></li>
+										<li><a >Japan</a></li>
+										<li><a >Miami</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-offset-1 col-md-3 col-sm-6">
+						<div class="single-footer-widget">
+							<h2>news letter</h2>
+							<div class="footer-newsletter">
+								<p>
+									Subscribe to get latest news update and informations
+								</p>
+							</div>
+							<div class="hm-foot-email">
+								<div class="foot-email-box">
+									<input type="text" class="form-control" placeholder="Add Email">
+								</div><!--/.foot-email-box-->
+								<div class="foot-email-subscribe">
+									<span><i class="fa fa-arrow-right"></i></span>
+								</div><!--/.foot-email-icon-->
+							</div><!--/.hm-foot-email-->
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<div class="row">
+					<div class="col-sm-6">
+						<p>
+							&copy; copyright.designed and developed by <a
+								href="">Malek Ammar and Ali 3elwa and Omar Hoss</a>.
+						</p><!--/p-->
+					</div>
+					<div class="col-sm-6">
+						<div class="footer-social">
+							<a href="https://www.facebook.com/omar.hossam.9047"><i class="fa fa-facebook"></i></a>
+							<a href="https://www.instagram.com/_omarhossam__/"><i class="fa fa-instagram"></i></a>
+							<a href="https://www.facebook.com/moka.ahmed.1291"><i class="fa fa-facebook"></i></a>
+							<a href="https://www.instagram.com/malekammar_/"><i class="fa fa-instagram"></i></a>
+							<a href="https://www.facebook.com/ali.ayman.9843"><i class="fa fa-facebook"></i></a>
+							<a href="https://www.instagram.com/aliayman16/"><i class="fa fa-instagram"></i></a>
+						</div>
+					</div>
+				</div>
+			</div><!--/.footer-copyright-->
+		</div><!--/.container-->
+
+		<div id="scroll-Top">
+			<div class="return-to-top">
+				<i class="fa fa-angle-up " id="scroll-top" data-toggle="tooltip" data-placement="top" title=""
+					data-original-title="Back to Top" aria-hidden="true"></i>
+			</div>
+
+		</div><!--/.scroll-Top-->
+
+	</footer><!--/.contact-->
+	<!--contact end-->
+
+
+
+	<!-- Include all js compiled plugins (below), or include individual files as needed -->
+
+	<script src="./js/jquery.js"></script>
+
+	<!--modernizr.min.js-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+	<!--bootstrap.min.js-->
+	<script src="./js/bootstrap.min.js"></script>
+
+	<!-- bootsnav js -->
+	<script src="./js/bootsnav.js"></script>
+
+	<!--owl.carousel.js-->
+	<script src="./js/owl.carousel.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+	<!--Custom JS-->
+	<script src="./js/custom.js"></script>
+
+</body>
+
+</html>
