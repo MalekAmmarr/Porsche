@@ -47,7 +47,7 @@ This project is a fully-functional Porsche website developed from scratch by our
 
 ### Clone the repository:
 ```bash
-git clone https://github.com/your-username/porsche-website.git
+git clone https://github.com/MalekAmmarr/porsche-website.git
 cd porsche-website
 ```
 ## 2.Install the dependencies:
